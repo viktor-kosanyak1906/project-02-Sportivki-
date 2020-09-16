@@ -1,0 +1,104 @@
+body {
+    max-width: 1440px;
+}
+.active {
+   border: solid white;
+   border-width: 0px 0px 1px 0px;
+}
+#container {
+     padding: 30px 5%;
+}
+#container h1 {
+    color: #C2EBDA;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+   margin-top: 20px;
+   background-color: rgb(9%, 22%, 25%, 0.7);
+   height: 100%;
+   width: 100%;
+   display: grid;
+   padding-top: 15px;
+   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+   grid-row-gap:30px;
+   padding-bottom: 20px;
+}
+article {
+    margin-left: 5%;
+    width: 90%;
+    height: 103%;
+    background-color: #9FDFD3;
+    font-family: 'Exo 2', sans-serif;
+}
+article:hover {
+    -webkit-box-shadow: 0px 2px 12px 3px rgba(159,223,211,0.6);
+    -moz-box-shadow: 0px 2px 12px 3px rgba(159,223,211,0.6);
+    box-shadow: 0px 2px 12px 3px rgba(159,223,211,0.6);
+}
+article img {
+    width: 100%;
+}
+.name {
+    font-size: 1.1em;
+    padding-top:10px;
+    text-align: center;
+    color: white;
+}
+.galc {
+    color: teal;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+article span {
+    float: right;
+    margin-top: 2%;
+    margin-right: 10%;
+    color: gray;
+}
+.pric::before {
+    content: "";
+    background-color: tomato;
+    width: 65px;
+    height: 2px;
+    position: absolute;
+    margin-top: 10px;
+    transform: rotate(15deg);
+}
+.pric::after {
+    content: "1529 грн";
+    margin-left: 5px;
+    color: white;
+}
+@media (max-width:1236px) {
+    .container {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width:1236px) {
+    article {
+        height: 103%;
+    }
+}
+@media (max-width:1106px) {
+    .container {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (max-width:1106px) {
+    .container {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (max-width:719px) {
+    .container {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+}
+@media (max-width:390px) {
+    .container {
+        display: grid;
+        grid-template-columns:1fr;
+}
